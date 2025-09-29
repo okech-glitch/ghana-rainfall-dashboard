@@ -1,0 +1,29 @@
+﻿seed: 42
+cv_folds: 5
+use_smoteenn: false
+use_focal_loss: false
+text_features: []
+cat_features: []
+num_features: []
+model: catboost
+catboost_params:
+  iterations: 1000
+  learning_rate: 0.05
+  depth: 6
+  loss_function: MultiClass
+  eval_metric: TotalF1:use_weights=false
+  random_seed: 42
+  verbose: 100
+  allow_writing_files: false
+optuna:
+  n_trials: 200
+  timeout_minutes: 240
+  direction: [maximize, minimize]
+  storage: logs/hpo.db
+  study_name: indi_f1_variance
+  pruner: median
+export:
+  onnx: true
+  tflite: true
+  parity_tol: 1e-5
+

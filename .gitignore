@@ -1,0 +1,17 @@
+﻿__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+logs/debug.log
+models/*.cb
+models/*.onnx
+models/*.tflite
+reports/shap_plots/
+.hypotheses/
+logs/hpo.db
+
