@@ -1,0 +1,69 @@
+{
+  "lightgbm": {
+    "model": "lightgbm",
+    "best_score": 0.8650566886539414,
+    "best_params": {
+      "objective": "multiclass",
+      "num_class": 4,
+      "metric": "multi_logloss",
+      "boosting_type": "gbdt",
+      "learning_rate": 0.006347540825687927,
+      "num_leaves": 399,
+      "max_depth": 12,
+      "min_child_samples": 10,
+      "min_child_weight": 0.04120914404625767,
+      "subsample": 0.6023850769081028,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.6079845841277962,
+      "reg_alpha": 0.0019389177677252227,
+      "reg_lambda": 0.02490139835385627,
+      "min_split_gain": 0.052042289422128525,
+      "max_bin": 442,
+      "n_estimators": 1176,
+      "random_state": 42,
+      "verbose": -1,
+      "n_jobs": -1
+    },
+    "trial_number": 22,
+    "cv_scores": [
+      0.8831956081602612,
+      0.8454534100756552,
+      0.8545241346582936,
+      0.8598099335847221,
+      0.884997707653474
+    ],
+    "datetime": "2025-10-09T06:35:25.616054Z",
+    "n_trials": 30
+  },
+  "xgboost": {
+    "model": "xgboost",
+    "best_score": 0.8696752770493327,
+    "best_params": {
+      "objective": "multi:softprob",
+      "num_class": 4,
+      "eval_metric": "mlogloss",
+      "learning_rate": 0.04101356102614908,
+      "max_depth": 12,
+      "min_child_weight": 2.1742626564803027,
+      "subsample": 0.9396207146659871,
+      "colsample_bytree": 0.6034147699629462,
+      "colsample_bylevel": 0.7054208833434691,
+      "gamma": 0.003147478100735665,
+      "reg_alpha": 0.00014532496178032488,
+      "reg_lambda": 0.0035592696909190983,
+      "max_delta_step": 0.5135981842040488,
+      "tree_method": "hist",
+      "seed": 42
+    },
+    "trial_number": 19,
+    "cv_scores": [
+      0.8839148612137454,
+      0.8515507557775356,
+      0.8616116412856635,
+      0.859079760161612,
+      0.8949177414838289
+    ],
+    "datetime": "2025-10-09T07:26:24.293963Z",
+    "n_trials": 30
+  }
+}

@@ -1,7 +1,0 @@
-﻿data_dir: data
-processed_dir: data/processed
-reports_dir: reports
-logs_dir: logs
-models_dir: models
-submissions_dir: submissions
-
